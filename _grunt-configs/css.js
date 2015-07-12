@@ -15,14 +15,15 @@ module.exports.tasks = {
 			files: {
 				'<%=config.tempDir%>/css/<%=config.css.distFile%>.css'       : '<%=config.css.scssDir%>/kickoff.scss',
 				// Remove the line below if you are supporting <IE9
-				'<%=config.tempDir%>/css/<%=config.css.distFile%>-old-ie.css': '<%=config.css.scssDir%>/kickoff-old-ie.scss'
+				'<%=config.tempDir%>/css/<%=config.css.distFile%>-old-ie.css': '<%=config.css.scssDir%>/kickoff-old-ie.scss',
+				'<%=config.tempDir%>/css/editor-style.css': '<%=config.css.scssDir%>/editor-style.scss'
 			}
 		},
 
 		styleguide: {
 			options: {
 				outputStyle: 'compressed',
-				precision : 10,
+				precision : 10
 			},
 			files: {
 				'<%=config.tempDir%>/css/styleguide.css' : '<%=config.css.scssDir%>/styleguide.scss'
@@ -64,9 +65,10 @@ module.exports.tasks = {
 			},
 			files: {
 				'<%=config.css.distDir%>/<%=config.css.distFile%>.css'       : '<%=config.css.distDir%>/<%=config.css.distFile%>.css',
+				'<%=config.css.distDir%>/editor-style.css'       : '<%=config.css.distDir%>/editor-style.css',
 				// Remove the line below if you are supporting <IE9
 				'<%=config.css.distDir%>/<%=config.css.distFile%>-old-ie.css': '<%=config.css.distDir%>/<%=config.css.distFile%>-old-ie.css'
-			},
+			}
 		}
 	}
 };
