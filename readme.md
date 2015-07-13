@@ -14,10 +14,10 @@ Maintained by [Rento Rinalds](https://github.com/rentodesign)
  * Concatenation and minification of JS files with and [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
  * Simple server using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
  * SVG Icon generation using [grunticon](https://github.com/filamentgroup/grunticon)
- * [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
- * ARIA roles and microformats
- * Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
- * [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
+* [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
+* ARIA roles and microformats
+* Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
+* [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
  
 Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
 
