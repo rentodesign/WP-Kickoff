@@ -1,10 +1,8 @@
-[![devDependency Status](https://david-dm.org/trykickoff/kickoff/dev-status.png)](https://david-dm.org/trykickoff/kickoff#info=devDependencies) [![Build Status](https://travis-ci.org/trykickoff/kickoff.svg?branch=master)](https://travis-ci.org/trykickoff/kickoff) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/trykickoff/kickoff?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# WP Kickoff
+## WordPress starter theme based on [Sage](https://github.com/roots/sage) and [Kickoff](https://github.com/trykickoff/kickoff)
+###Sage - WP starter theme and Kickoff - a lightweight front-end framework for creating scalable, responsive sites
 
-![Kickoff](http://i61.tinypic.com/1zyitqe.png)
-# Kickoff
-## A lightweight front-end framework for creating scalable, responsive sites
-
-Developed and maintained by [Ashley Nolan](https://github.com/ashleynolan) & [Zander Martineau](https://github.com/mrmartineau)
+Maintained by [Rento Rinalds](https://github.com/rentodesign)
 
 ### Features
 * Built in a mobile-first, responsive philosophy *(but can easily be used for fixed sites as well)*
@@ -16,12 +14,38 @@ Developed and maintained by [Ashley Nolan](https://github.com/ashleynolan) & [Za
  * Concatenation and minification of JS files with and [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
  * Simple server using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
  * SVG Icon generation using [grunticon](https://github.com/filamentgroup/grunticon)
+ * [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
+ * ARIA roles and microformats
+ * Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
+ * [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
+ 
+Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
 
-## Demos and documentation
+* Cleaner output of `wp_head` and enqueued assets
+* Cleaner HTML output of navigation menus
+* Root relative URLs
+* Nice search (`/search/query/`)
+* Google CDN jQuery snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
+* Google Analytics snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
+
+## Kickoff Demos and documentation
 Kickoff's demo and documentation site is hosted at [trykickoff.github.io](http://trykickoff.github.io/).
 
-## Bugs and feature requests
-Have a bug or a feature request? Please search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/trykickoff/kickoff/issues/new).
+## Installation
+
+Clone the git repo - `git clone https://github.com/rentodesign/wp-kickoff.git` and then rename the directory to the name of your theme or website.
+
+If you don't use [Bedrock](https://github.com/roots/bedrock), you'll need to add the following to your `wp-config.php` on your development installation:
+
+```php
+define('WP_ENV', 'development');
+```
+
+## Configuration
+
+Edit `lib/config.php` to enable or disable theme features
+
+Edit `lib/init.php` to setup navigation menus, post thumbnail sizes, post formats, and sidebars.
 
 ### Browser Compatibility
 Kickoff has been tested in the following browsers:
@@ -31,36 +55,4 @@ Kickoff has been tested in the following browsers:
 - Opera 10+
 - Internet Explorer 8+
 
-### Yeoman generator
-There is also a Yeoman generator for Kickoff, visit [trykickoff.github.io/docs/yeoman.html](http://trykickoff.github.io/docs/yeoman.html) for more info.
-
-If you're using Kickoff we'd love to hear about it; please e-mail us at trykickoff@gmail.com
-
-## Creators
-
-**Zander Martineau**
-
-- <http://twitter.com/mrmartineau>
-- <http://github.com/mrmartineau>
-
-**Ashley Nolan**
-
-- <http://twitter.com/AshNolan_>
-- <http://github.com/ashleynolan>
-
-### Community
-
-Keep track of development and community news by following [@TryKickoff on Twitter](http://twitter.com/TryKickoff).
-
-### Versioning
-
-For transparency into our release cycle and in striving to maintain backward compatibility, Kickoff is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
-
-### Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request
 
