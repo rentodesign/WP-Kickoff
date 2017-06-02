@@ -2,6 +2,8 @@
 ## WordPress starter theme based on [Sage](https://github.com/roots/sage) and [Kickoff](https://github.com/trykickoff/kickoff)
 ###Sage - WP starter theme and Kickoff - a lightweight front-end framework for creating scalable, responsive sites
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rentorm/WP-Kickoff.svg)](https://greenkeeper.io/)
+
 Maintained by [Rento Rinalds](https://github.com/rentodesign)
 
 ### Features
